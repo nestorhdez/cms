@@ -1,0 +1,54 @@
+[
+    {
+        "skill": "javascript-plain colored",
+        "title": "Javascript"
+    },
+    {
+        "skill": "vuejs-plain colored",
+        "title": "Vue"
+    },
+    {
+        "skill": "nodejs-plain colored",
+        "title": "Node"
+    },
+    {
+        "skill": "typescript-plain colored",
+        "title": "TypeScript"
+    },
+    {
+        "skill": "git-plain colored",
+        "title": "Git"
+    },
+    {
+        "skill": "mongodb-plain colored",
+        "title": "Mongodb"
+    },
+    {
+        "skill": "react-original colored",
+        "title": "React (Basic)"
+    },
+    {
+        "skill": "docker-plain colored",
+        "title": "Docker (Basic)"
+    },
+    {
+        "skill": "html5-plain colored",
+        "title": "Html"
+    },
+    {
+        "skill": "css3-plain colored",
+        "title": "Css"
+    },
+    {
+        "skill": "sass-original colored",
+        "title": "Sass"
+    },
+    {
+        "skill": "bootstrap-plain colored",
+        "title": "Bootstrap"
+    },
+    {
+        "skill": "jquery-plain colored",
+        "title": "Jquery"
+    }
+]

@@ -1,0 +1,23 @@
+//Reset
+*,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $primary-font;
+	color: var(--black-white);
+}
+
+body {
+	background-color: var(--white-blue);
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+}
+p {
+	line-height: 1.6;
+	font-size: 0.95rem;
+	text-align: justify;
+}

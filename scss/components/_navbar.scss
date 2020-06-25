@@ -1,0 +1,137 @@
+@import 'theme-switch';
+
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    padding: 1rem 3rem;
+    z-index: 99;
+    overflow: hidden;
+    .nav-link {
+        color: $third-color;
+        font-size: 1.1rem;
+    }
+    #name-navbar {
+        width: 45px;
+        color: $third-color;
+        font-size: 1.7rem;
+        font-family: $secondary-font;
+    }
+}
+
+#navbar-container.open {
+    height: 100vh;
+}
+
+#navbar-container.show {
+    background-color: var(--black-blue);
+    border-bottom: 1px solid var(--transparent-gray);
+    transition: background-color .7s ease, height .7s, border-bottom .7s;
+}
+
+#nav-links-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    transform-origin: 0% -100%;
+    visibility: hidden;
+    animation: hide-links .4s;
+    .nav-link {
+        display: block;
+        padding: 15px;
+    }
+}
+
+#nav-links-container.show {
+    animation: show-links .5s ease .3s 1 forwards;
+    visibility: visible;
+}
+
+@keyframes hide-links {
+    from {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-150px, 0px);
+    }
+}
+
+@keyframes show-links {
+    from { transform: translate(-200px, 0px); }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+#menu-hamb {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    background: none;
+    border: none;
+    transform: scale(0.6);
+    div {
+        background-color: $third-color;
+        margin-bottom: 6px;
+        width: 45px;
+        height: 7px;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: .7s ease;
+    }
+
+    div:first-child {
+        transform-origin: 0% 0%;
+    }
+    div:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+}
+
+#menu-hamb.cross {
+    div:first-child {
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    div:nth-last-child(2) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    div:last-child {
+      transform: rotate(-45deg) translate(-5px, -4px);
+    }
+}
+
+//Media Query
+
+@include breakpoint(768px) {
+    #navbar-container {
+        flex-direction: row;
+        #nav-links-container {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            margin: 0 0 0 auto;
+            width: initial;
+            .nav-link {
+                filter: brightness(100%);
+                margin: 0 10px;
+                padding: 0;
+                display: inline;
+            }
+            .nav-link:hover {
+                filter: brightness(75%);
+            }
+        }
+    }
+    #menu-hamb{
+        display: none;
+    }
+}
