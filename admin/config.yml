@@ -3,3 +3,16 @@ backend:
   branch: master
 publish_mode: editorial_workflow
 media_folder: "cms/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "posts/blog"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
