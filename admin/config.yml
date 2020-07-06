@@ -8,6 +8,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "posts/blog"
+    extension: "json"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
