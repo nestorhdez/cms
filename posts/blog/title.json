@@ -1,0 +1,14 @@
+{
+  "layout": "blog",
+  "date": "July 6, 2020 5:14 PM",
+  "galleryImages": [
+    "/cms/images/screenshot-2020-07-06-at-16.46.15.png",
+    "/cms/images/screenshot-2020-07-06-at-16.46.15.png"
+  ],
+  "title": "Title",
+  "linksToProject": {
+    "github": "github.com",
+    "web": "google.com"
+  },
+  "description": "Some project"
+}
