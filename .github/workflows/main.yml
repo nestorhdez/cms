@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: Merge files action step
       id: merge
-      uses: actions/merge@v1
+      uses: '../actions/merge'
     - name: Push the changes
-      uses: actions/push@v1
+      uses: '../actions/push'
       with:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
