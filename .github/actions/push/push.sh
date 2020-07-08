@@ -13,7 +13,7 @@ fi
 if [[ ! -z "${SOME_OTHER}" ]]; then
   echo "Some other exists!"  
 elif [[ ! -z "${INPUT_SOME_OTHER}" ]]; then
-  echo "Input some other exists!"
+  echo $INPUT_SOME_OTHER
 else
   echo 'Missing input "some_other".';
   exit 1;
