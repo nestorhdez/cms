@@ -15,3 +15,4 @@ jobs:
       uses: ./.github/actions/push
       with:
         github_token: '${{ secrets.GITHUB_TOKEN }}'
+        some_other: "HELLO"
