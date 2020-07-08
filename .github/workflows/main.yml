@@ -9,5 +9,10 @@ jobs:
     name: Merge posts into one json file
     steps:
     - name: Merge files action step
-      id: merge
-      run: pwd
+      working-directory: ./.github/actions/merge
+      run: bash merge.sh
+    - name: Push step
+      working-directory: ./.github/actions/push
+      run: bash push.sh
+      with:
+        github_token: '${{ secrets.GITHUB_TOKEN }}'
