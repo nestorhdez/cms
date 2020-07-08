@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Merge posts into one json file
     steps:
+    - uses: actions/checkout@v1
     - name: Merge files action step
       uses: ./.github/actions/merge
     - name: Push step
