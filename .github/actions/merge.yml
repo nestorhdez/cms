@@ -1,0 +1,13 @@
+name: 'Merge'
+description: 'Pushing to GitHub repository local changes'
+branding:
+  icon: upload-cloud
+  color: green
+inputs:
+  directory:
+    description: 'Directory to change to before pushing.'
+    required: false
+    default: '.'
+runs:
+  using: 'node12'
+  main: 'merge.js'
