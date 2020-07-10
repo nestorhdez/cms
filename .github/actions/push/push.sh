@@ -10,11 +10,5 @@ else
   exit 1;
 fi
 
-if [[ ! -z "${SOME_OTHER}" ]]; then
-  echo "Some other exists!"  
-elif [[ ! -z "${INPUT_SOME_OTHER}" ]]; then
-  echo $INPUT_SOME_OTHER
-else
-  echo 'Missing input "some_other".';
-  exit 1;
-fi
+echo "User name:"
+echo $(git config user.name)
