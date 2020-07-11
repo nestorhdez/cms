@@ -1,0 +1,25 @@
+{
+"posts": [
+{
+  "layout": "blog",
+  "date": "July 11, 2020 12:56 AM",
+  "title": "Echo",
+  "description": "Echo echo"
+}{
+  "layout": "blog",
+  "date": "July 8, 2020 10:20 PM",
+  "title": "Let's check actions",
+  "description": "Let's check actions"
+}{
+  "layout": "blog",
+  "date": "July 6, 2020 5:14 PM",
+  "galleryImages": [],
+  "title": "Title",
+  "linksToProject": {
+    "github": "github.com",
+    "web": "google.com"
+  },
+  "description": "Testing actions again"
+}
+]
+}
