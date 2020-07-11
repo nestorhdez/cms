@@ -6,7 +6,7 @@ OUTPUT="./posts.json"
 
 echo "{"$'\n'\"posts\"": [" > $OUTPUT
 
-for file in ./posts/*.json; do
+for file in ./posts/blog/*.json; do
 
   cat $file >> $OUTPUT
 
