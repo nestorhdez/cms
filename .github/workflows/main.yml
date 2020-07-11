@@ -18,9 +18,9 @@ jobs:
       uses: ./.github/actions/merge
     - name: Commit Changes
       run: |
-        # git config --local user.email "${{secrets.EMAIL}}"
-        # git config --local user.name "${{secrets.NAME}}"
-        # git commit -m "Merge json files - Action" -a
+        git config --local user.email "${{secrets.EMAIL}}"
+        git config --local user.name "${{secrets.NAME}}"
+        git commit -m "Merge json files - Action" -a
     - name: Push step
       uses: ./.github/actions/push
       with:

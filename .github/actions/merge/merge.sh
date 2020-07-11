@@ -18,3 +18,5 @@ for file in ./posts/blog/*.json; do
 done
 
 echo $'\n'"]"$'\n'"}" >> $OUTPUT
+
+echo $TOTAL_FILES files merged.
