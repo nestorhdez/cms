@@ -2,7 +2,7 @@
 
 INDEX=1
 TOTAL_FILES="$(find ./posts -maxdepth 1 -type f | wc -l)"
-OUTPUT="./posts.json"
+OUTPUT="./posts/blogs.json"
 
 echo "{"$'\n'\"posts\"": [" > $OUTPUT
 

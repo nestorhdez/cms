@@ -20,7 +20,8 @@ jobs:
       run: |
         git config --local user.email "${{secrets.EMAIL}}"
         git config --local user.name "${{secrets.NAME}}"
-        git commit -m "Merge json files - Action" -a
+        git add ./posts/blogs.json
+        git commit -m "Merge json files - Action"
     - name: Push step
       uses: ./.github/actions/push
       with:
