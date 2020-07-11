@@ -10,5 +10,5 @@ else
   exit 1;
 fi
 
-echo "User name:"
-echo $(git config user.name)
+echo "actor:"
+echo $GITHUB_ACTOR
