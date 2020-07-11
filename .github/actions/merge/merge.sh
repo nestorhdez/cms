@@ -1,12 +1,13 @@
 # !/bin/sh
 
 INDEX=1
-TOTAL_FILES="$(find ./posts -maxdepth 1 -type f | wc -l)"
+INPUT="./posts/blog/*.json"
+TOTAL_FILES="$(find $INPUT -maxdepth 1 -type f | wc -l)"
 OUTPUT="./posts/blogs.json"
 
 echo "{"$'\n'\"posts\"": [" > $OUTPUT
 
-for file in ./posts/blog/*.json; do
+for file in $INPUT; do
 
   cat $file >> $OUTPUT
 
