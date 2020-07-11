@@ -1,3 +1,8 @@
+# on:
+#   pull_request:
+#     types: [closed]
+#     branches: [ master ]
+
 on:
   push:
     branches: master
@@ -5,7 +10,7 @@ on:
 jobs:
   merge_job:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
+    # if: github.event.pull_request.merged
     name: Merge posts into one json file
     steps:
     - uses: actions/checkout@v1
