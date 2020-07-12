@@ -1,5 +1,11 @@
 # !/bin/sh
 
+BASE=$(pwd)
+PROJECT=${PWD##*/}
+
+echo $BASE
+echo $PROJECT
+
 INDEX=1
 INPUT="./posts/blog/*.json"
 TOTAL_FILES="$(find $INPUT -maxdepth 1 -type f | wc -l)"
